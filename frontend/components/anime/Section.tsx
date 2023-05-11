@@ -10,6 +10,20 @@ export interface SectionProps {
   setVideoSrc: Function;
 }
 
+export const videoSources = [
+  // Forest -> 40 s
+  "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4",
+
+  // Coffe --> 16 s
+  "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Coffee+-+45358.mp4",
+
+  // Mountain --> 8s
+  "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Mountains+-+61818.mp4",
+
+  // Ocean --> 46s
+  "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Ocean+-+62249.mp4",
+];
+
 const Section: React.FC<SectionProps> = ({
   title,
   animeList,
@@ -17,19 +31,6 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   const animeListRef = useRef(null);
 
-  const videoSources = [
-    // Forest -> 40 s
-    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4",
-
-    // Coffe --> 16 s
-    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Coffee+-+45358.mp4",
-
-    // Mountain --> 8s
-    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Mountains+-+61818.mp4",
-
-    // Ocean --> 46s
-    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Ocean+-+62249.mp4",
-  ];
 
   return (
     <div>

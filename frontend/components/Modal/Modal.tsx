@@ -11,8 +11,8 @@ const Modal: React.FC<ModalProps> = ({onClick}) => {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <h1 className={styles.text}>You are about to complete your time limit</h1>
-        <p className={styles.text}>Your remaining time for this week is:</p>
-        <p className={styles.textTimeRemaining}>3 hours</p>
+        <p className={styles.text}>Your remaining time for today:</p>
+        <p className={styles.textTimeRemaining}>5 minutes</p>
         <div className={styles.buttonsContainer}>
           <a href="/calendar" className={styles.textCalendar}>Check your calendar</a>
           <button onClick={onClick} className={styles.button}>close</button>

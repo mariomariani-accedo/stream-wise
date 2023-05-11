@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-import { SearchIcon } from '@heroicons/react/outline';
+import { SearchIcon } from "@heroicons/react/outline";
 
-import AnimeflixIcon from '@components/AnimeFlixIcon';
+import Image from "next/image";
 
 const Header: React.FC<{}> = () => {
   const router = useRouter();
@@ -11,7 +11,7 @@ const Header: React.FC<{}> = () => {
   const handleKeyPress: React.KeyboardEventHandler<HTMLInputElement> = (
     event
   ) => {
-    if (event.key === 'Enter')
+    if (event.key === "Enter")
       router.push(`/search?keyword=${event.currentTarget.value}`);
   };
 
@@ -19,7 +19,13 @@ const Header: React.FC<{}> = () => {
     <header className="sticky top-0 z-[51] flex h-12 w-full items-center bg-gray-900 shadow-md">
       <Link href="/" passHref>
         <a>
-          <AnimeflixIcon className="ml-4 h-7 w-7 cursor-pointer sm:ml-6" />
+          {/* <AnimeflixIcon className="ml-4 h-7 w-7 cursor-pointer sm:ml-6" /> */}
+          <Image
+            src="/StreamWise.png"
+            className="ml-4 h-7 w-7 cursor-pointer sm:ml-6"
+            width="84"
+            height="54"
+          />
         </a>
       </Link>
 
@@ -31,6 +37,14 @@ const Header: React.FC<{}> = () => {
           onKeyPress={handleKeyPress}
         ></input>
       </div>
+
+      <Link href="/calendar" passHref>
+        <a className="ml-8 text-white">CALENDAR</a>
+      </Link>
+
+      <Link href="/my-account" passHref>
+        <a className="ml-8 text-white">MY ACCOUNT</a>
+      </Link>
     </header>
   );
 };

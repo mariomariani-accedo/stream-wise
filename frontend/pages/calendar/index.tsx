@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import dayjs from "dayjs";
 
+import Header from "@components/Header";
+
 export default () => {
   const startOfWeek = dayjs().startOf("month");
 
@@ -47,39 +49,29 @@ export default () => {
 
   const [episodes, setEpisodes] = useState(calendar);
 
-  // const onClick = (item, index) => {
-  //   console.log(item, index);
-  //   setEpisodes(
-  //     episodes.map((episode, key) =>
-  //       key === index
-  //         ? {
-  //             ...episode,
-  //             views: [...episode.views, { title: "The office S1E2" }],
-  //           }
-  //         : { ...episode }
-  //     )
-  //   );
-  // };
-
   return (
-    <div className={styles.gridContainer}>
-      {episodes.map((cal, count) => (
-        <div key={cal.day} className={styles.gridItem}>
-          <div
-            className={`${count === 10 ? styles.today : ""}`}
-            style={{ marginBottom: "15px" }}
-          >
-            {cal.day}
-          </div>
-          {cal.views.map((eps) => (
-            <div key={eps.title} className="inline-flex items-center">
-              <div className={styles.dot} />
-              <div className={styles.show}>{eps.title}</div>
-              <div className="absolute bottom-5 text-xs">{cal.duration}</div>
+    <>
+      <Header />
+
+      <div className={styles.gridContainer}>
+        {episodes.map((cal, count) => (
+          <div key={cal.day} className={styles.gridItem}>
+            <div
+              className={`${count === 10 ? styles.today : ""}`}
+              style={{ marginBottom: "15px" }}
+            >
+              {cal.day}
             </div>
-          ))}
-        </div>
-      ))}
-    </div>
+            {cal.views.map((eps) => (
+              <div key={eps.title} className="inline-flex items-center">
+                <div className={styles.dot} />
+                <div className={styles.show}>{eps.title}</div>
+                <div className="absolute bottom-5 text-xs">{cal.duration}</div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </>
   );
 };

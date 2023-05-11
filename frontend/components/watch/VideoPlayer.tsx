@@ -13,9 +13,11 @@ export interface VideoPlayerProps {
   src: string;
   poster: string;
   onEnded: Function;
+  bingeWatching: Function;
+  hideBinge: Function;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, onEnded }) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, onEnded, bingeWatching, hideBinge }) => {
   const dispatch = useDispatch();
   const [startTime, currentTime] = useSelector((store) => [
     store.timer.startTime,
@@ -68,11 +70,19 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, onEnded }) => {
 
   const timeChangeCallback = (event: CustomEvent<number>) => {
     if (videoplayer.current.duration < 0) return;
+    if (event.detail < 1) {
+      hideBinge();
+      return;
+    }
 
     if (currentTime === Math.ceil(event.detail)) return;
     console.log(event.detail, videoplayer.current.duration)
     if(event.detail > (videoplayer.current.duration - 2)) {
-      onEnded()
+      if (src.includes('Ocean')) {
+        onEnded()
+      } else {
+        bingeWatching(videoplayer)
+      }
     }
     dispatch(setCurrentTime(event.detail));
   };

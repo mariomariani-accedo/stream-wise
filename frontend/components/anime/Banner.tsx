@@ -19,12 +19,14 @@ const VideoPlayer = dynamic(() => import("@components/watch/VideoPlayer"), {
 });
 export interface BannerProps {
   anime: AnimeBannerFragment;
+  src: string;
 }
 
-const Banner: React.FC<BannerProps> = ({ anime }) => {
+const Banner: React.FC<BannerProps> = ({
+  anime,
+  src = "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4",
+}) => {
   const router = useRouter();
-  const src =
-    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4";
 
   // finish the progress bar if the bannerimage doesn't exist
   useEffect(() => {

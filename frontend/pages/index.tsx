@@ -36,6 +36,7 @@ const Index = ({
   const [recentlyWatched, setRecentlyWatched] = useState<AnimeInfoFragment[]>(
     []
   );
+  const [videoSrc, setVideoSrc] = useState<string>();
 
   // populate recentlyWatched
   useEffect(() => {
@@ -54,17 +55,33 @@ const Index = ({
     <>
       <Header />
 
-      <Banner anime={banner} />
+      <Banner anime={banner} src={videoSrc} />
 
-      <Section title="Trending Now" animeList={trending.media} />
+      <Section
+        title="Trending Now"
+        animeList={trending.media}
+        setVideoSrc={setVideoSrc}
+      />
 
       {/* only show */}
       {recentlyWatched.length > 0 ? (
-        <Section title="Continue watching" animeList={recentlyWatched} />
+        <Section
+          title="Continue watching"
+          animeList={recentlyWatched}
+          setVideoSrc={setVideoSrc}
+        />
       ) : null}
 
-      <Section title="Popular" animeList={popular.media} />
-      <Section title="Top Rated (All time)" animeList={topRated.media} />
+      <Section
+        title="Popular"
+        animeList={popular.media}
+        setVideoSrc={setVideoSrc}
+      />
+      <Section
+        title="Top Rated (All time)"
+        animeList={topRated.media}
+        setVideoSrc={setVideoSrc}
+      />
     </>
   );
 };

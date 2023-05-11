@@ -1,16 +1,35 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
-import { AnimeInfoFragment } from '@animeflix/api/aniList';
+import { AnimeInfoFragment } from "@animeflix/api/aniList";
 
-import AnimeCard from '@components/anime/Card';
+import AnimeCard from "@components/anime/Card";
 
 export interface SectionProps {
   title: string;
   animeList: AnimeInfoFragment[];
+  setVideoSrc: any;
 }
 
-const Section: React.FC<SectionProps> = ({ title, animeList }) => {
+const Section: React.FC<SectionProps> = ({
+  title,
+  animeList,
+  setVideoSrc = () => {},
+}) => {
   const animeListRef = useRef(null);
+
+  const videoSources = [
+    // Forest -> 40 s
+    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4",
+
+    // Coffe --> 16 s
+    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Coffee+-+45358.mp4",
+
+    // Mountain --> 8s
+    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Mountains+-+61818.mp4",
+
+    // Ocean --> 46s
+    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Ocean+-+62249.mp4",
+  ];
 
   return (
     <div>
@@ -25,7 +44,13 @@ const Section: React.FC<SectionProps> = ({ title, animeList }) => {
         onMouseEnter={() => animeListRef.current.focus()}
       >
         {animeList.map((anime) => (
-          <AnimeCard key={anime.id} anime={anime} />
+          <AnimeCard
+            key={anime.id}
+            anime={anime}
+            onClick={() =>
+              setVideoSrc(videoSources[anime.id % videoSources.length])
+            }
+          />
         ))}
       </div>
     </div>

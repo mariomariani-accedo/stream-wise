@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 
 import { InferGetServerSidePropsType } from 'next';
-
+import dynamic from 'next/dynamic';
 import { getAnimeByIds, indexPage } from '@animeflix/api';
 import { AnimeInfoFragment } from '@animeflix/api/aniList';
 
-import Banner from '@components/anime/Banner';
 import Section from '@components/anime/Section';
+import Modal from '@components/Modal/Modal';
 import Header from '@components/Header';
 import progressBar from '@components/Progress';
 
@@ -24,6 +24,10 @@ export const getServerSideProps = async () => {
   };
 };
 
+const VideoPlayer = dynamic(() => import('@components/watch/VideoPlayer'), {
+  ssr: false,
+});
+
 const Index = ({
   banner,
   trending,
@@ -32,7 +36,7 @@ const Index = ({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   // finish the progress bar
   progressBar.finish();
-
+  const [showModal, setShowModal] = useState(false)
   const [recentlyWatched, setRecentlyWatched] = useState<AnimeInfoFragment[]>(
     []
   );
@@ -52,9 +56,15 @@ const Index = ({
 
   return (
     <>
+        {
+          showModal && <Modal onClick={() => setShowModal(false)}/>
+        }
       <Header />
-
-      <Banner anime={banner} />
+      <VideoPlayer
+        src="https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4"
+        poster="https://usustatesman.com/wp-content/uploads/2021/01/the-office.jpg"
+        onEnded={() => setShowModal(true)}
+        />
 
       <Section title="Trending Now" animeList={trending.media} />
 
@@ -62,9 +72,6 @@ const Index = ({
       {recentlyWatched.length > 0 ? (
         <Section title="Continue watching" animeList={recentlyWatched} />
       ) : null}
-
-      <Section title="Popular" animeList={popular.media} />
-      <Section title="Top Rated (All time)" animeList={topRated.media} />
     </>
   );
 };

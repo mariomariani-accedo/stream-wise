@@ -1,0 +1,6 @@
+[34m@animeflix/frontend:start[0m: cache hit, replaying output [2m955baf2a2cdd7a20[0m
+[34m@animeflix/frontend:start: [0m$ next start
+[34m@animeflix/frontend:start: [0mready - started server on 0.0.0.0:3000, url: http://localhost:3000
+[34m@animeflix/frontend:start: [0mwarn  - You have enabled experimental feature(s).
+[34m@animeflix/frontend:start: [0mwarn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use them at your own risk.
+[34m@animeflix/frontend:start: [0m

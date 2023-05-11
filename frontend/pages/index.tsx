@@ -9,6 +9,7 @@ import Section from '@components/anime/Section';
 import Modal from '@components/Modal/Modal';
 import Header from '@components/Header';
 import progressBar from '@components/Progress';
+import Banner from "@components/anime/Banner";
 
 
 
@@ -62,12 +63,9 @@ const Index = ({
           showModal && <Modal onClick={() => setShowModal(false)}/>
         }
       <Header />
-      <VideoPlayer
-        src="https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4"
-        poster="https://usustatesman.com/wp-content/uploads/2021/01/the-office.jpg"
-        onEnded={() => setShowModal(true)}
-        />
-
+      <Banner anime={banner} onEnded={() => setShowModal(true)}/>
+      
+      setShowModal(true)
       <Section title="Trending Now" animeList={trending.media} />
 
       {/* only show */}

@@ -20,11 +20,13 @@ const VideoPlayer = dynamic(() => import("@components/watch/VideoPlayer"), {
 export interface BannerProps {
   anime: AnimeBannerFragment;
   src: string;
+  onEnded: Function;
 }
 
 const Banner: React.FC<BannerProps> = ({
   anime,
   src = "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4",
+  onEnded,
 }) => {
   const router = useRouter();
 
@@ -50,7 +52,7 @@ const Banner: React.FC<BannerProps> = ({
 
       {/* The container that lies on top of the image */}
       <div className="absolute mx-auto mt-4 text-white">
-        <VideoPlayer src={src} poster="" />
+        <VideoPlayer src={src} poster="" onEnded={onEnded} />
       </div>
     </div>
   );

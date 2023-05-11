@@ -1,0 +1,47 @@
+.container {
+  z-index: 99;
+  width: 500px;
+  height: 300px;
+  position: absolute; 
+  top: 200px;
+  left: 500px;
+  background-color: black;
+}
+
+.textContainer {
+  padding: 100px;
+  justify-content: center;
+  align-self: center;
+}
+
+.text {
+  color: white;
+}
+
+.textTimeRemaining {
+  color: red;
+  font-weight: 900;
+  text-align: center;
+}
+
+.textCalendar {
+  background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+}
+
+.buttonsContainer {
+  position: absolute;
+  margin-top: 50px;
+}
+
+.button {
+  margin-left: 20px;
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+}

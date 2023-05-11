@@ -12,9 +12,10 @@ import VideoControls from "./VideoControls";
 export interface VideoPlayerProps {
   src: string;
   poster: string;
+  onEnded: Function;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, onEnded }) => {
   const dispatch = useDispatch();
   const [startTime, currentTime] = useSelector((store) => [
     store.timer.startTime,
@@ -69,7 +70,10 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
     if (videoplayer.current.duration < 0) return;
 
     if (currentTime === Math.ceil(event.detail)) return;
-
+    console.log(event.detail, videoplayer.current.duration)
+    if(event.detail > (videoplayer.current.duration - 2)) {
+      onEnded()
+    }
     dispatch(setCurrentTime(event.detail));
   };
 
@@ -118,7 +122,6 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
           <source data-src={src} type="video/mp4" />
         </Video>
       )}
-
       <VideoControls />
     </Player>
   );

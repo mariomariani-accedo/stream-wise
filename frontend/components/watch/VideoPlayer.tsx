@@ -1,13 +1,13 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
-import { Player, Hls, Video } from '@vime/react';
+import { Player, Hls, Video } from "@vime/react";
 
-import '@vime/core/themes/default.css';
+import "@vime/core/themes/default.css";
 
-import { setCurrentTime, setStartTime } from '@slices/timer';
-import { useDispatch, useSelector } from '@store/store';
+import { setCurrentTime, setStartTime } from "@slices/timer";
+import { useDispatch, useSelector } from "@store/store";
 
-import VideoControls from './VideoControls';
+import VideoControls from "./VideoControls";
 
 export interface VideoPlayerProps {
   src: string;
@@ -35,7 +35,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
     videoplayer.current.focus();
 
     // prevent default actions
-    videoplayer.current.addEventListener('keydown', (e) => {
+    videoplayer.current.addEventListener("keydown", (e) => {
       e.preventDefault();
     });
 
@@ -45,13 +45,13 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
     };
 
     // Enable fullscreen keyboard shortcuts in fullscreen
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener("keydown", (e) => {
       if (
         videoplayer.current?.isFullscreenActive &&
         e.target !== videoplayer.current
       ) {
         // Create a new keyboard event
-        const keyboardEvent = new KeyboardEvent('keydown', {
+        const keyboardEvent = new KeyboardEvent("keydown", {
           key: e.key,
           code: e.code,
           shiftKey: e.shiftKey,
@@ -74,9 +74,9 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
   };
 
   useEffect(() => {
-    const savedState = localStorage.getItem(`Anime${anime}`) || '1-0';
+    const savedState = localStorage.getItem(`Anime${anime}`) || "1-0";
     const [savedEpisode, savedTime] = savedState
-      .split('-')
+      .split("-")
       .map((v) => parseInt(v, 10));
 
     if (savedEpisode === episode) {
@@ -99,17 +99,20 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
     );
   }, [anime, currentTime, dispatch]);
 
+  src =
+    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4";
+
   return (
     <Player
       onVmCurrentTimeChange={timeChangeCallback}
       ref={videoplayer}
       tabIndex={0}
-      style={{ outline: 'none' }}
+      style={{ outline: "none" }}
       onVmPlaybackReady={() => {
         videoplayer.current.currentTime = startTime;
       }}
     >
-      {src && src.includes('m3u8') ? (
+      {src && src.includes("m3u8") ? (
         <Hls version="latest" poster={poster} key={src}>
           <source data-src={src} type="application/x-mpegURL" />
         </Hls>

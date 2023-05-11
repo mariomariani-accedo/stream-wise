@@ -1,4 +1,4 @@
-[34m@animeflix/frontend:build[0m: cache hit, replaying output [2mc0daac07c7c1bf80[0m
+[34m@animeflix/frontend:build[0m: cache hit, replaying output [2mf0b8d7e35089867c[0m
 [34m@animeflix/frontend:build: [0m$ next build
 [34m@animeflix/frontend:build: [0mwarn  - You have enabled experimental feature(s).
 [34m@animeflix/frontend:build: [0mwarn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use them at your own risk.
@@ -7,44 +7,40 @@
 [34m@animeflix/frontend:build: [0m  npx browserslist@latest --update-db
 [34m@animeflix/frontend:build: [0m  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 [34m@animeflix/frontend:build: [0minfo  - Checking validity of types...
-[34m@animeflix/frontend:build: [0minfo  - Creating an optimized production build...
-[34m@animeflix/frontend:build: [0m> [PWA] Compile client (static)
-[34m@animeflix/frontend:build: [0m> [PWA] Auto register service worker with: /Users/mariomariani/Projects/accedo/hackaton/animeflix/node_modules/next-pwa/register.js
-[34m@animeflix/frontend:build: [0m> [PWA] Service worker: /Users/mariomariani/Projects/accedo/hackaton/animeflix/frontend/public/sw.js
-[34m@animeflix/frontend:build: [0m> [PWA]   url: /sw.js
-[34m@animeflix/frontend:build: [0m> [PWA]   scope: /
-[34m@animeflix/frontend:build: [0mBrowserslist: caniuse-lite is outdated. Please run:
-[34m@animeflix/frontend:build: [0m  npx browserslist@latest --update-db
-[34m@animeflix/frontend:build: [0m  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-[34m@animeflix/frontend:build: [0m> [PWA] Compile server
-[34m@animeflix/frontend:build: [0m> [PWA] Compile server
-[34m@animeflix/frontend:build: [0mBrowserslist: caniuse-lite is outdated. Please run:
-[34m@animeflix/frontend:build: [0m  npx update-browserslist-db@latest
-[34m@animeflix/frontend:build: [0m  Why you should do it regularly: https://github.com/browserslist/update-db#readme
-[34m@animeflix/frontend:build: [0minfo  - Compiled successfully
-[34m@animeflix/frontend:build: [0minfo  - Collecting page data...
-[34m@animeflix/frontend:build: [0minfo  - Generating static pages (0/2)
-[34m@animeflix/frontend:build: [0minfo  - Generating static pages (2/2)
-[34m@animeflix/frontend:build: [0minfo  - Finalizing page optimization...
 [34m@animeflix/frontend:build: [0m
-[34m@animeflix/frontend:build: [0mPage                                       Size     First Load JS
-[34m@animeflix/frontend:build: [0m┌ λ /                                      28 kB           133 kB
-[34m@animeflix/frontend:build: [0m├   /_app                                  0 B            91.6 kB
-[34m@animeflix/frontend:build: [0m├ ○ /404                                   194 B          91.8 kB
-[34m@animeflix/frontend:build: [0m├ λ /anime/[id]                            3.42 kB         109 kB
-[34m@animeflix/frontend:build: [0m├ λ /api/anime                             0 B            91.6 kB
-[34m@animeflix/frontend:build: [0m├ λ /api/video/proxy                       0 B            91.6 kB
-[34m@animeflix/frontend:build: [0m├ λ /calendar/[id]                         3.43 kB         109 kB
-[34m@animeflix/frontend:build: [0m├ λ /genre/[genre]                         1.87 kB         107 kB
-[34m@animeflix/frontend:build: [0m├ λ /search                                1.85 kB         107 kB
-[34m@animeflix/frontend:build: [0m└ λ /watch/[id]                            11.6 kB         117 kB
-[34m@animeflix/frontend:build: [0m+ First Load JS shared by all              91.6 kB
-[34m@animeflix/frontend:build: [0m  ├ chunks/framework-706b777f121deb6c.js   45.3 kB
-[34m@animeflix/frontend:build: [0m  ├ chunks/main-ca2102f44d25976c.js        30.6 kB
-[34m@animeflix/frontend:build: [0m  ├ chunks/pages/_app-414a3c30f187efdd.js  13.8 kB
-[34m@animeflix/frontend:build: [0m  ├ chunks/webpack-2aaeca9589a5ea6a.js     1.91 kB
-[34m@animeflix/frontend:build: [0m  └ css/045ca251dd7be0d2.css               3.97 kB
+[34m@animeflix/frontend:build: [0mFailed to compile.
 [34m@animeflix/frontend:build: [0m
-[34m@animeflix/frontend:build: [0mλ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
-[34m@animeflix/frontend:build: [0m○  (Static)  automatically rendered as static HTML (uses no initial props)
+[34m@animeflix/frontend:build: [0m./components/watch/VideoPlayer.tsx
+[34m@animeflix/frontend:build: [0m1:35  Error: Replace `"react"` with `'react'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m1:35  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m3:36  Error: Replace `"@vime/react"` with `'@vime/react'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m3:36  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m5:8  Error: Replace `"@vime/core/themes/default.css"` with `'@vime/core/themes/default.css'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m5:8  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m7:46  Error: Replace `"@slices/timer"` with `'@slices/timer'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m7:46  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m8:42  Error: Replace `"@store/store"` with `'@store/store'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m8:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m10:27  Error: Replace `"./VideoControls"` with `'./VideoControls'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m10:27  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m38:42  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m38:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m48:31  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m48:31  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m54:49  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m54:49  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m77:65  Error: Replace `"1-0"` with `'1-0'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m77:65  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m79:14  Error: Replace `"-"` with `'-'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m79:14  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m102:3  Error: Assignment to function parameter 'src'.  no-param-reassign
+[34m@animeflix/frontend:build: [0m103:5  Error: Replace `"https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4"` with `'https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m103:5  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m110:25  Error: Replace `"none"` with `'none'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m110:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m115:28  Error: Replace `"m3u8"` with `'m3u8'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m115:28  Error: Strings must use singlequote.  @typescript-eslint/quotes
 [34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0minfo  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+[34m@animeflix/frontend:build: [0merror Command failed with exit code 1.
+[34m@animeflix/frontend:build: [0minfo Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 import { InferGetServerSidePropsType } from 'next';
 import dynamic from 'next/dynamic';
@@ -9,6 +9,8 @@ import Section from '@components/anime/Section';
 import Modal from '@components/Modal/Modal';
 import Header from '@components/Header';
 import progressBar from '@components/Progress';
+
+
 
 export const getServerSideProps = async () => {
   const data = await indexPage({
@@ -44,8 +46,8 @@ const Index = ({
   // populate recentlyWatched
   useEffect(() => {
     const ids = Object.keys(localStorage)
-      .filter((key) => key.startsWith('Anime'))
-      .map((key) => parseInt(key.replace('Anime', ''), 10));
+      .filter((key) => key.startsWith("Anime"))
+      .map((key) => parseInt(key.replace("Anime", ""), 10));
 
     getAnimeByIds({
       perPage: 12,

@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 
 import { Player, Hls, Video } from "@vime/react";
 
@@ -102,9 +102,6 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, onEnded }) => {
       `${episodeRef.current}-${currentTime}`
     );
   }, [anime, currentTime, dispatch]);
-
-  src =
-    "https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4";
 
   return (
     <Player

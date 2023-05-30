@@ -19,10 +19,10 @@ const VideoPlayer = dynamic(() => import("@components/watch/VideoPlayer"), {
 });
 export interface BannerProps {
   anime: AnimeBannerFragment;
-  src: string;
-  onEnded: Function;
-  bingeWatching: Function;
-  hideBinge: Function;
+  src?: string;
+  onEnded?: Function;
+  bingeWatching?: Function;
+  hideBinge?: Function;
 }
 
 const Banner: React.FC<BannerProps> = ({

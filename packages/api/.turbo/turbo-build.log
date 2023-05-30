@@ -1,26 +1,32 @@
-[33m@animeflix/api:build[0m: cache hit, replaying output [2m401919ccde5e9e0d[0m
+[33m@animeflix/api:build[0m: cache hit, replaying output [2med9a426a7a06e67d[0m
+[33m@animeflix/api:build: [0myarn run v1.22.19
 [33m@animeflix/api:build: [0m$ run-s build:*
-[33m@animeflix/api:build: [0m$ graphql-codegen --config ./codegen.yml
-[33m@animeflix/api:build: [0m[12:19:15] Parse configuration [started]
-[33m@animeflix/api:build: [0m[12:19:15] Parse configuration [completed]
-[33m@animeflix/api:build: [0m[12:19:15] Generate outputs [started]
-[33m@animeflix/api:build: [0m[12:19:15] Generate ./src/generated/aniList.ts [started]
-[33m@animeflix/api:build: [0m[12:19:15] Generate ./src/generated/kitsu.ts [started]
-[33m@animeflix/api:build: [0m[12:19:15] Load GraphQL schemas [started]
-[33m@animeflix/api:build: [0m[12:19:15] Load GraphQL schemas [started]
-[33m@animeflix/api:build: [0m(node:53981) ExperimentalWarning: buffer.Blob is an experimental feature. This feature could change at any time
-[33m@animeflix/api:build: [0m(Use `node --trace-warnings ...` to show where the warning was created)
-[33m@animeflix/api:build: [0m[12:19:16] Load GraphQL schemas [completed]
-[33m@animeflix/api:build: [0m[12:19:16] Load GraphQL documents [started]
-[33m@animeflix/api:build: [0m[12:19:16] Load GraphQL documents [completed]
-[33m@animeflix/api:build: [0m[12:19:16] Generate [started]
-[33m@animeflix/api:build: [0m[12:19:16] Generate [completed]
-[33m@animeflix/api:build: [0m[12:19:16] Generate ./src/generated/aniList.ts [completed]
-[33m@animeflix/api:build: [0m[12:19:16] Load GraphQL schemas [completed]
-[33m@animeflix/api:build: [0m[12:19:16] Load GraphQL documents [started]
-[33m@animeflix/api:build: [0m[12:19:16] Load GraphQL documents [completed]
-[33m@animeflix/api:build: [0m[12:19:16] Generate [started]
-[33m@animeflix/api:build: [0m[12:19:16] Generate [completed]
-[33m@animeflix/api:build: [0m[12:19:16] Generate ./src/generated/kitsu.ts [completed]
-[33m@animeflix/api:build: [0m[12:19:16] Generate outputs [completed]
-[33m@animeflix/api:build: [0m$ tsc
+[33m@animeflix/api:build: [0m
+[33m@animeflix/api:build: [0m> @animeflix/api@0.0.1 build:graphql
+[33m@animeflix/api:build: [0m> graphql-codegen --config ./codegen.yml
+[33m@animeflix/api:build: [0m
+[33m@animeflix/api:build: [0m[17:25:25] Parse configuration [started]
+[33m@animeflix/api:build: [0m[17:25:25] Parse configuration [completed]
+[33m@animeflix/api:build: [0m[17:25:25] Generate outputs [started]
+[33m@animeflix/api:build: [0m[17:25:25] Generate ./src/generated/aniList.ts [started]
+[33m@animeflix/api:build: [0m[17:25:25] Generate ./src/generated/kitsu.ts [started]
+[33m@animeflix/api:build: [0m[17:25:25] Load GraphQL schemas [started]
+[33m@animeflix/api:build: [0m[17:25:25] Load GraphQL schemas [started]
+[33m@animeflix/api:build: [0m[17:25:26] Load GraphQL schemas [completed]
+[33m@animeflix/api:build: [0m[17:25:26] Load GraphQL documents [started]
+[33m@animeflix/api:build: [0m[17:25:26] Load GraphQL documents [completed]
+[33m@animeflix/api:build: [0m[17:25:26] Generate [started]
+[33m@animeflix/api:build: [0m[17:25:26] Generate [completed]
+[33m@animeflix/api:build: [0m[17:25:26] Generate ./src/generated/kitsu.ts [completed]
+[33m@animeflix/api:build: [0m[17:25:26] Load GraphQL schemas [completed]
+[33m@animeflix/api:build: [0m[17:25:26] Load GraphQL documents [started]
+[33m@animeflix/api:build: [0m[17:25:26] Load GraphQL documents [completed]
+[33m@animeflix/api:build: [0m[17:25:26] Generate [started]
+[33m@animeflix/api:build: [0m[17:25:26] Generate [completed]
+[33m@animeflix/api:build: [0m[17:25:26] Generate ./src/generated/aniList.ts [completed]
+[33m@animeflix/api:build: [0m[17:25:26] Generate outputs [completed]
+[33m@animeflix/api:build: [0m
+[33m@animeflix/api:build: [0m> @animeflix/api@0.0.1 build:tsc
+[33m@animeflix/api:build: [0m> tsc
+[33m@animeflix/api:build: [0m
+[33m@animeflix/api:build: [0mDone in 3.12s.

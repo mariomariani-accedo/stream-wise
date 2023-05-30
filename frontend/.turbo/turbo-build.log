@@ -1,4 +1,5 @@
-[34m@animeflix/frontend:build[0m: cache hit, replaying output [2mf0b8d7e35089867c[0m
+[34m@animeflix/frontend:build[0m: cache hit, replaying output [2m264ab43441198d0c[0m
+[34m@animeflix/frontend:build: [0myarn run v1.22.19
 [34m@animeflix/frontend:build: [0m$ next build
 [34m@animeflix/frontend:build: [0mwarn  - You have enabled experimental feature(s).
 [34m@animeflix/frontend:build: [0mwarn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use them at your own risk.
@@ -9,6 +10,254 @@
 [34m@animeflix/frontend:build: [0minfo  - Checking validity of types...
 [34m@animeflix/frontend:build: [0m
 [34m@animeflix/frontend:build: [0mFailed to compile.
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./pages/calendar/index.tsx
+[34m@animeflix/frontend:build: [0m1:1  Error: There should be at least one empty line between import groups  import/order
+[34m@animeflix/frontend:build: [0m1:33  Error: Replace `"react"` with `'react'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m1:33  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m2:1  Error: There should be at least one empty line between import groups  import/order
+[34m@animeflix/frontend:build: [0m2:1  Error: `./styles.module.css` import should occur after import of `@components/Header`  import/order
+[34m@animeflix/frontend:build: [0m2:20  Error: Replace `"./styles.module.css"` with `'./styles.module.css'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m2:20  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m3:1  Error: 'dayjs' should be listed in the project's dependencies. Run 'npm i -S dayjs' to add it  import/no-extraneous-dependencies
+[34m@animeflix/frontend:build: [0m3:19  Error: Replace `"dayjs"` with `'dayjs'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m3:19  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m5:20  Error: Replace `"@components/Header"` with `'@components/Header'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m5:20  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m7:1  Warning: Assign arrow function to a variable before exporting as module default  import/no-anonymous-default-export
+[34m@animeflix/frontend:build: [0m7:16  Error: Component definition is missing display name  react/display-name
+[34m@animeflix/frontend:build: [0m8:39  Error: Replace `"month"` with `'month'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m8:39  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m12:37  Error: Replace `"day").format("dddd,·MMMM·D·YYYY"` with `'day').format('dddd,·MMMM·D·YYYY'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m12:37  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m12:51  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m16:20  Error: Replace `""` with `''`  prettier/prettier
+[34m@animeflix/frontend:build: [0m16:20  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m18:25  Error: Replace `"The·office·S1E1·|·24m"` with `'The·office·S1E1·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m18:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m19:25  Error: Replace `"The·office·S1E2·|·24m"` with `'The·office·S1E2·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m19:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m20:18  Error: Replace `"48m"` with `'48m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m20:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m23:25  Error: Replace `"Game·of·thrones·S1E1·|·24m"` with `'Game·of·thrones·S1E1·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m23:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m24:25  Error: Replace `"Game·of·thrones·S1E2·|·24m"` with `'Game·of·thrones·S1E2·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m24:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m25:25  Error: Replace `"Game·of·thrones·S1E3·|·24m"` with `'Game·of·thrones·S1E3·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m25:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m26:25  Error: Replace `"Game·of·thrones·S1E4·|·24m"` with `'Game·of·thrones·S1E4·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m26:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m27:18  Error: Replace `"96m"` with `'96m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m27:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m30:25  Error: Replace `"Stranger·things·S1E1·|·24m"` with `'Stranger·things·S1E1·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m30:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m31:25  Error: Replace `"Stranger·things·S1E2·|·24m"` with `'Stranger·things·S1E2·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m31:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m32:18  Error: Replace `"48m"` with `'48m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m32:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m35:25  Error: Replace `"Below·Deck·S1E1·|·24m"` with `'Below·Deck·S1E1·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m35:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m36:18  Error: Replace `"24m"` with `'24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m36:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m39:25  Error: Replace `"kardashians·S1E1·|·24m"` with `'kardashians·S1E1·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m39:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m40:18  Error: Replace `"24m"` with `'24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m40:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m43:25  Error: Replace `"First·Date·S1E1·|·24m"` with `'First·Date·S1E1·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m43:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m44:25  Error: Replace `"First·Date·S1E2·|·24m"` with `'First·Date·S1E2·|·24m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m44:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m45:18  Error: Replace `"48m"` with `'48m'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m45:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m50:20  Error: 'setEpisodes' is assigned a value but never used.  unused-imports/no-unused-vars
+[34m@animeflix/frontend:build: [0m60:59  Error: Replace `""` with `''`  prettier/prettier
+[34m@animeflix/frontend:build: [0m60:59  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m61:38  Error: Replace `"15px"` with `'15px'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m61:38  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./pages/index.tsx
+[34m@animeflix/frontend:build: [0m1:45  Error: Replace `"react"` with `'react'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m1:45  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m3:45  Error: Replace `"next"` with `'next'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m3:45  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m4:1  Error: There should be at least one empty line between import groups  import/order
+[34m@animeflix/frontend:build: [0m4:21  Error: Replace `"next/dynamic"` with `'next/dynamic'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m4:21  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m5:42  Error: Replace `"@animeflix/api"` with `'@animeflix/api'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m5:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m6:35  Error: Replace `"@animeflix/api/aniList"` with `'@animeflix/api/aniList'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m6:35  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m8:19  Error: 'videoSources' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m8:39  Error: Replace `"@components/anime/Section"` with `'@components/anime/Section'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m8:39  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m9:19  Error: Replace `"@components/Modal/Modal"` with `'@components/Modal/Modal'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m9:19  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m10:1  Error: `@components/Binge/Binge` import should occur before import of `@components/Modal/Modal`  import/order
+[34m@animeflix/frontend:build: [0m10:19  Error: Replace `"@components/Binge/Binge"` with `'@components/Binge/Binge'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m10:19  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m11:1  Error: `@components/Header` import should occur before import of `@components/Modal/Modal`  import/order
+[34m@animeflix/frontend:build: [0m11:20  Error: Replace `"@components/Header"` with `'@components/Header'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m11:20  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m12:25  Error: Replace `"@components/Progress"` with `'@components/Progress'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m12:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m13:1  Error: `@components/anime/Banner` import should occur before import of `@components/anime/Section`  import/order
+[34m@animeflix/frontend:build: [0m13:20  Error: Replace `"@components/anime/Banner"` with `'@components/anime/Banner'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m13:20  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m29:7  Error: 'VideoPlayer' is assigned a value but never used.  unused-imports/no-unused-vars
+[34m@animeflix/frontend:build: [0m29:42  Error: Replace `"@components/watch/VideoPlayer"` with `'@components/watch/VideoPlayer'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m29:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m47:35  Error: Replace `"Coffe"` with `'Coffe'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m47:35  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m53:7  Error: Insert `··`  prettier/prettier
+[34m@animeflix/frontend:build: [0m54:7  Error: Replace `setVideoSrc("https://test-data-interviews.s3.eu-west-1.amazonaws.com/Ocean+-+62249.mp4")` with `··setVideoSrc(⏎··········'https://test-data-interviews.s3.eu-west-1.amazonaws.com/Ocean+-+62249.mp4'⏎········);`  prettier/prettier
+[34m@animeflix/frontend:build: [0m54:19  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m54:95  Error: Missing semicolon.  @typescript-eslint/semi
+[34m@animeflix/frontend:build: [0m55:1  Error: Insert `··`  prettier/prettier
+[34m@animeflix/frontend:build: [0m56:9  Error: Insert `··`  prettier/prettier
+[34m@animeflix/frontend:build: [0m57:1  Error: Replace `··········videoPlayerRef.current.current.play()` with `············videoPlayerRef.current.current.play();`  prettier/prettier
+[34m@animeflix/frontend:build: [0m57:48  Error: Missing semicolon.  @typescript-eslint/semi
+[34m@animeflix/frontend:build: [0m58:1  Error: Insert `··`  prettier/prettier
+[34m@animeflix/frontend:build: [0m59:7  Error: Insert `··`  prettier/prettier
+[34m@animeflix/frontend:build: [0m60:1  Error: Insert `··`  prettier/prettier
+[34m@animeflix/frontend:build: [0m63:5  Error: Expected space(s) after "if".  @typescript-eslint/keyword-spacing
+[34m@animeflix/frontend:build: [0m63:7  Error: Insert `·`  prettier/prettier
+[34m@animeflix/frontend:build: [0m64:23  Error: Insert `;`  prettier/prettier
+[34m@animeflix/frontend:build: [0m64:23  Error: Missing semicolon.  @typescript-eslint/semi
+[34m@animeflix/frontend:build: [0m66:18  Error: Insert `;`  prettier/prettier
+[34m@animeflix/frontend:build: [0m66:18  Error: Missing semicolon.  @typescript-eslint/semi
+[34m@animeflix/frontend:build: [0m70:39  Error: Replace `"Anime"` with `'Anime'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m70:39  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m71:42  Error: Replace `"Anime",·""` with `'Anime',·''`  prettier/prettier
+[34m@animeflix/frontend:build: [0m71:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m71:51  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m91:29  Error: Insert `;`  prettier/prettier
+[34m@animeflix/frontend:build: [0m91:29  Error: Missing semicolon.  @typescript-eslint/semi
+[34m@animeflix/frontend:build: [0m93:10  Error: Delete `⏎········`  prettier/prettier
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./pages/my-account/index.tsx
+[34m@animeflix/frontend:build: [0m1:1  Error: There should be at least one empty line between import groups  import/order
+[34m@animeflix/frontend:build: [0m1:44  Error: Replace `"react"` with `'react'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m1:44  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m2:8  Error: 'styles' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m2:20  Error: Replace `"./styles.module.css"` with `'./styles.module.css'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m2:20  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m4:1  Error: `@components/Header` import should occur before import of `./styles.module.css`  import/order
+[34m@animeflix/frontend:build: [0m4:20  Error: Replace `"@components/Header"` with `'@components/Header'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m4:20  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m7:31  Error: Replace `"USER_USAGE_TIME_KEY"` with `'USER_USAGE_TIME_KEY'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m7:31  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m12:5  Warning: Unexpected console statement.  no-console
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./components/Binge/Binge.tsx
+[34m@animeflix/frontend:build: [0m1:1  Error: There should be at least one empty line between import groups  import/order
+[34m@animeflix/frontend:build: [0m4:1  Error: Delete `⏎`  prettier/prettier
+[34m@animeflix/frontend:build: [0m6:15  Error: Insert `;`  prettier/prettier
+[34m@animeflix/frontend:build: [0m14:60  Error: Replace `Next·Episode` with `⏎········Next·Episode⏎······`  prettier/prettier
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./components/Header.tsx
+[34m@animeflix/frontend:build: [0m1:18  Error: Replace `"next/link"` with `'next/link'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m1:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m2:27  Error: Replace `"next/router"` with `'next/router'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m2:27  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m4:28  Error: Replace `"@heroicons/react/outline"` with `'@heroicons/react/outline'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m4:28  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m6:1  Error: `next/image` import should occur before import of `next/link`  import/order
+[34m@animeflix/frontend:build: [0m6:19  Error: Replace `"next/image"` with `'next/image'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m6:19  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m14:23  Error: Replace `"Enter"` with `'Enter'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m14:23  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m23:11  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./components/Modal/Modal.tsx
+[34m@animeflix/frontend:build: [0m1:1  Error: There should be at least one empty line between import groups  import/order
+[34m@animeflix/frontend:build: [0m4:1  Error: Delete `⏎`  prettier/prettier
+[34m@animeflix/frontend:build: [0m6:22  Error: Insert `;`  prettier/prettier
+[34m@animeflix/frontend:build: [0m9:38  Error: A space is required after '{'.  @typescript-eslint/object-curly-spacing
+[34m@animeflix/frontend:build: [0m9:39  Error: Replace `onClick` with `·onClick·`  prettier/prettier
+[34m@animeflix/frontend:build: [0m9:46  Error: A space is required before '}'.  @typescript-eslint/object-curly-spacing
+[34m@animeflix/frontend:build: [0m13:37  Error: Replace `You·are·about·to·complete·your·time·limit` with `⏎··········You·are·about·to·complete·your·time·limit⏎········`  prettier/prettier
+[34m@animeflix/frontend:build: [0m17:11  Error: Do not use an `<a>` element to navigate to `/calendar/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+[34m@animeflix/frontend:build: [0m17:63  Error: Replace `Check·your·calendar` with `⏎············Check·your·calendar⏎··········`  prettier/prettier
+[34m@animeflix/frontend:build: [0m18:63  Error: Replace `close` with `⏎············close⏎··········`  prettier/prettier
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./components/anime/Banner.tsx
+[34m@animeflix/frontend:build: [0m1:27  Error: Replace `"react"` with `'react'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m1:27  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m3:19  Error: Replace `"next/image"` with `'next/image'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m3:19  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m4:8  Error: 'Link' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m4:18  Error: Replace `"next/link"` with `'next/link'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m4:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m5:27  Error: Replace `"next/router"` with `'next/router'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m5:27  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m6:1  Error: `next/dynamic` import should occur before import of `next/image`  import/order
+[34m@animeflix/frontend:build: [0m6:21  Error: Replace `"next/dynamic"` with `'next/dynamic'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m6:21  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m8:37  Error: Replace `"@animeflix/api/aniList"` with `'@animeflix/api/aniList'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m8:37  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m9:10  Error: 'ClockIcon' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m9:21  Error: 'ThumbUpIcon' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m9:40  Error: Replace `"@heroicons/react/outline"` with `'@heroicons/react/outline'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m9:40  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m10:10  Error: 'PlayIcon' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m10:26  Error: Replace `"@heroicons/react/solid"` with `'@heroicons/react/solid'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m10:26  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m12:8  Error: 'Genre' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m12:19  Error: Replace `"@components/Genre"` with `'@components/Genre'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m12:19  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m13:8  Error: 'Icon' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m13:18  Error: Replace `"@components/Icon"` with `'@components/Icon'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m13:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m14:25  Error: Replace `"@components/Progress"` with `'@components/Progress'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m14:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m15:10  Error: 'stripHtml' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m15:27  Error: Replace `"@utility/utils"` with `'@utility/utils'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m15:27  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m17:42  Error: Replace `"@components/watch/VideoPlayer"` with `'@components/watch/VideoPlayer'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m17:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m30:9  Error: Replace `"https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4"` with `'https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m30:9  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m33:12  Error: Insert `,`  prettier/prettier
+[34m@animeflix/frontend:build: [0m35:9  Error: 'router' is assigned a value but never used.  unused-imports/no-unused-vars
+[34m@animeflix/frontend:build: [0m59:21  Error: Delete `·`  prettier/prettier
+[34m@animeflix/frontend:build: [0m60:20  Error: Delete `·`  prettier/prettier
+[34m@animeflix/frontend:build: [0m61:20  Error: Delete `·`  prettier/prettier
+[34m@animeflix/frontend:build: [0m62:28  Error: Delete `·`  prettier/prettier
+[34m@animeflix/frontend:build: [0m65:1  Error: Delete `··`  prettier/prettier
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./components/anime/Card.tsx
+[34m@animeflix/frontend:build: [0m1:19  Error: Replace `"next/image"` with `'next/image'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m1:19  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m2:8  Error: 'Link' is defined but never used.  unused-imports/no-unused-imports
+[34m@animeflix/frontend:build: [0m2:18  Error: Replace `"next/link"` with `'next/link'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m2:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m4:35  Error: Replace `"@animeflix/api/aniList"` with `'@animeflix/api/aniList'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m4:35  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m5:40  Error: Replace `"@heroicons/react/outline"` with `'@heroicons/react/outline'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m5:40  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m6:26  Error: Replace `"@heroicons/react/solid"` with `'@heroicons/react/solid'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m6:26  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m8:18  Error: Replace `"@components/Icon"` with `'@components/Icon'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m8:18  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m9:34  Error: Replace `"@utility/image"` with `'@utility/image'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m9:34  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m
+[34m@animeflix/frontend:build: [0m./components/anime/Section.tsx
+[34m@animeflix/frontend:build: [0m1:31  Error: Replace `"react"` with `'react'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m1:31  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m3:35  Error: Replace `"@animeflix/api/aniList"` with `'@animeflix/api/aniList'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m3:35  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m5:23  Error: Replace `"@components/anime/Card"` with `'@components/anime/Card'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m5:23  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m15:3  Error: Replace `"https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4"` with `'https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m15:3  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m18:3  Error: Replace `"https://test-data-interviews.s3.eu-west-1.amazonaws.com/Coffee+-+45358.mp4"` with `'https://test-data-interviews.s3.eu-west-1.amazonaws.com/Coffee+-+45358.mp4'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m18:3  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m21:3  Error: Replace `"https://test-data-interviews.s3.eu-west-1.amazonaws.com/Mountains+-+61818.mp4"` with `'https://test-data-interviews.s3.eu-west-1.amazonaws.com/Mountains+-+61818.mp4'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m21:3  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m24:3  Error: Replace `"https://test-data-interviews.s3.eu-west-1.amazonaws.com/Ocean+-+62249.mp4"` with `'https://test-data-interviews.s3.eu-west-1.amazonaws.com/Ocean+-+62249.mp4'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m24:3  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m32:37  Error: Delete `⏎`  prettier/prettier
 [34m@animeflix/frontend:build: [0m
 [34m@animeflix/frontend:build: [0m./components/watch/VideoPlayer.tsx
 [34m@animeflix/frontend:build: [0m1:35  Error: Replace `"react"` with `'react'`  prettier/prettier
@@ -23,23 +272,30 @@
 [34m@animeflix/frontend:build: [0m8:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
 [34m@animeflix/frontend:build: [0m10:27  Error: Replace `"./VideoControls"` with `'./VideoControls'`  prettier/prettier
 [34m@animeflix/frontend:build: [0m10:27  Error: Strings must use singlequote.  @typescript-eslint/quotes
-[34m@animeflix/frontend:build: [0m38:42  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
-[34m@animeflix/frontend:build: [0m38:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
-[34m@animeflix/frontend:build: [0m48:31  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
-[34m@animeflix/frontend:build: [0m48:31  Error: Strings must use singlequote.  @typescript-eslint/quotes
-[34m@animeflix/frontend:build: [0m54:49  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
-[34m@animeflix/frontend:build: [0m54:49  Error: Strings must use singlequote.  @typescript-eslint/quotes
-[34m@animeflix/frontend:build: [0m77:65  Error: Replace `"1-0"` with `'1-0'`  prettier/prettier
-[34m@animeflix/frontend:build: [0m77:65  Error: Strings must use singlequote.  @typescript-eslint/quotes
-[34m@animeflix/frontend:build: [0m79:14  Error: Replace `"-"` with `'-'`  prettier/prettier
-[34m@animeflix/frontend:build: [0m79:14  Error: Strings must use singlequote.  @typescript-eslint/quotes
-[34m@animeflix/frontend:build: [0m102:3  Error: Assignment to function parameter 'src'.  no-param-reassign
-[34m@animeflix/frontend:build: [0m103:5  Error: Replace `"https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4"` with `'https://test-data-interviews.s3.eu-west-1.amazonaws.com/Forest+-+97998.mp4'`  prettier/prettier
-[34m@animeflix/frontend:build: [0m103:5  Error: Strings must use singlequote.  @typescript-eslint/quotes
-[34m@animeflix/frontend:build: [0m110:25  Error: Replace `"none"` with `'none'`  prettier/prettier
-[34m@animeflix/frontend:build: [0m110:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
-[34m@animeflix/frontend:build: [0m115:28  Error: Replace `"m3u8"` with `'m3u8'`  prettier/prettier
-[34m@animeflix/frontend:build: [0m115:28  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m20:51  Error: Replace `·src,·poster,·onEnded,·bingeWatching,·hideBinge·` with `⏎··src,⏎··poster,⏎··onEnded,⏎··bingeWatching,⏎··hideBinge,⏎`  prettier/prettier
+[34m@animeflix/frontend:build: [0m41:42  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m41:42  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m51:31  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m51:31  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m57:49  Error: Replace `"keydown"` with `'keydown'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m57:49  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m79:5  Warning: Unexpected console statement.  no-console
+[34m@animeflix/frontend:build: [0m79:60  Error: Insert `;`  prettier/prettier
+[34m@animeflix/frontend:build: [0m79:60  Error: Missing semicolon.  @typescript-eslint/semi
+[34m@animeflix/frontend:build: [0m80:5  Error: Expected space(s) after "if".  @typescript-eslint/keyword-spacing
+[34m@animeflix/frontend:build: [0m80:7  Error: Replace `(event.detail·>·(videoplayer.current.duration·-·2))` with `·(event.detail·>·videoplayer.current.duration·-·2)`  prettier/prettier
+[34m@animeflix/frontend:build: [0m82:18  Error: Insert `;`  prettier/prettier
+[34m@animeflix/frontend:build: [0m82:18  Error: Missing semicolon.  @typescript-eslint/semi
+[34m@animeflix/frontend:build: [0m84:35  Error: Insert `;`  prettier/prettier
+[34m@animeflix/frontend:build: [0m84:35  Error: Missing semicolon.  @typescript-eslint/semi
+[34m@animeflix/frontend:build: [0m91:65  Error: Replace `"1-0"` with `'1-0'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m91:65  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m93:14  Error: Replace `"-"` with `'-'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m93:14  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m121:25  Error: Replace `"none"` with `'none'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m121:25  Error: Strings must use singlequote.  @typescript-eslint/quotes
+[34m@animeflix/frontend:build: [0m126:28  Error: Replace `"m3u8"` with `'m3u8'`  prettier/prettier
+[34m@animeflix/frontend:build: [0m126:28  Error: Strings must use singlequote.  @typescript-eslint/quotes
 [34m@animeflix/frontend:build: [0m
 [34m@animeflix/frontend:build: [0minfo  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
 [34m@animeflix/frontend:build: [0merror Command failed with exit code 1.

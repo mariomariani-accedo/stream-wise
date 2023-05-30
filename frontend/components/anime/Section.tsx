@@ -7,7 +7,7 @@ import AnimeCard from "@components/anime/Card";
 export interface SectionProps {
   title: string;
   animeList: AnimeInfoFragment[];
-  setVideoSrc: Function;
+  setVideoSrc?: Function;
 }
 
 export const videoSources = [

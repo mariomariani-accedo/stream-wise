@@ -10,7 +10,7 @@ import { base64SolidImage } from "@utility/image";
 
 export interface CardProps {
   anime: AnimeInfoFragment;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const Card: React.FC<CardProps> = ({ anime, onClick }) => {

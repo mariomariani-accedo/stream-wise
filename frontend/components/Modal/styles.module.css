@@ -2,44 +2,52 @@
   z-index: 99;
   width: 500px;
   height: 300px;
-  position: absolute; 
-  top: 200px;
-  left: 500px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
   background-color: black;
 }
 
 .textContainer {
-  padding: 100px;
+  padding: 50px;
   justify-content: center;
   align-self: center;
 }
 
 .text {
   color: white;
+  text-align: center;
 }
 
 .textTimeRemaining {
+  margin-top: 20px;
   color: red;
   font-weight: 900;
+  font-size: 2rem;
   text-align: center;
 }
 
 .textCalendar {
   background-color: green; /* Green */
   border: none;
+  border-radius: 10px;
   color: white;
   padding: 20px 32px;
   text-align: center;
 }
 
 .buttonsContainer {
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
 }
 
 .button {
   margin-left: 20px;
   background-color: red; /* Green */
+  border-radius: 10px;
   border: none;
   color: white;
   padding: 15px 32px;

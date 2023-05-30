@@ -12,9 +12,9 @@ import VideoControls from "./VideoControls";
 export interface VideoPlayerProps {
   src: string;
   poster: string;
-  onEnded: Function;
-  bingeWatching: Function;
-  hideBinge: Function;
+  onEnded?: Function;
+  bingeWatching?: Function;
+  hideBinge?: Function;
 }
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, onEnded, bingeWatching, hideBinge }) => {
